@@ -16,7 +16,7 @@ export const EducationSection = () => {
                         <p className="text-[0.8rem] flex items-center font-medium md:text-xl"> University of California, Irvine
                             <ChevronRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-transform duration-500 ease-in-out"/>
                         </p>
-                        <p className="text-[0.6rem] md:text-lg font-extralight text-gray-400">Bachelor's of Science in Software Engineering</p>
+                        <p className="text-[0.6rem] md:text-lg font-extralight text-gray-400">Bachelor`&apos;s of Science in Software Engineering</p>
                     </div>
                 </div>
                 <p className="text-right text-[0.6rem] md:text-lg font-extralight text-gray-400">Sept 2021 - June 2025</p>

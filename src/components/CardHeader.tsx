@@ -1,6 +1,6 @@
 import StarIcon from "@/assets/icons/star.svg";
 
-export const CardHeader = ({title, description}: {title:string; description:string; }) => {
+export const CardHeader = ({title, description, className}: {title:string; description:string; className?:string}) => {
     return (
         <div className="flex flex-col px-6 py-6">
             <div className="inline-flex items-center gap-2">
