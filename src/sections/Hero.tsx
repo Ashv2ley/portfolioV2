@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const HeroSection = () => {
   return (
-  <div className="py-20 md:py-24 relative overflow-x-clip">
+  <div id="home" className="py-20 md:py-24 relative overflow-x-clip">
     <div className="absolute inset-0 -z-20 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
       <div className="absolute inset-0 -z-30 opacity-5" style={{backgroundImage: `url(${grainImage.src})`}}></div>
       <div className="size-[420px] hero-ring"></div>
