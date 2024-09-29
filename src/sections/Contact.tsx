@@ -10,7 +10,7 @@ export const ContactSection = () => {
             <Link href="mailto:example@example.com">
               <span className="text-white hover:underline">email</span> 
             </Link>
-            {" "}and I`&apos;ll respond as soon as possible.
+            {" "}and I&apos;ll respond as soon as possible.
           </>
         }
         />
