@@ -7,7 +7,7 @@ export const ContactSection = () => {
       <SectionHeader title="Contct Me" subtitle="Get in Touch" description={
           <> 
             Want to connect? Just shoot me an{" "}
-            <Link href="mailto:example@example.com">
+            <Link href="mailto:ash.anyanwu@gmail.com">
               <span className="text-white hover:underline">email</span> 
             </Link>
             {" "}and I&apos;ll respond as soon as possible.

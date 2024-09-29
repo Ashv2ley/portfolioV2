@@ -2,6 +2,7 @@ import Image from "next/image";
 import outsideImage from '@/assets/images/outside.png';
 import { ChevronDown } from "lucide-react";
 import grainImage from '@/assets/images/grain.jpg';
+import Link from "next/link";
 
 export const HeroSection = () => {
   return (
@@ -35,11 +36,11 @@ export const HeroSection = () => {
       </div>
       <div className="flex flex-col md:flex-row items-center justify-center mt-8 gap-4">
         <button className="inline-flex items-center gap-2 border bg-slate-500/10 border-white/15 px-6 h-12 rounded-xl group hover:translate-y-1 duration-300">
-          <span className="font-semibold">Explore My Work</span>
+          <Link href={"#projects"}><span className="font-semibold">Explore My Work</span></Link>
           <ChevronDown className="size-5 group-hover:translate-y-1 duration-300"/>
         </button>
         <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl group hover:translate-y-1 duration-300">
-          <span className="font-semibold">Get in Touch</span>
+          <Link href={"#contact"}><span className="font-semibold">Get in Touch</span></Link>
           <span>👍</span>
         </button>
       </div>
