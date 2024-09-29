@@ -72,7 +72,7 @@ export const AboutSection = () => {
               {hobbbies.map((hobby) => (
                 <motion.div 
                 key={hobby.title} 
-                className="text-xs md:text-base inline-flex items-center gap-2 px-4 md:px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 border-2 border-white/10 absolute"
+                className="text-xs md:text-base inline-flex items-center gap-2 px-4 md:px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
                 style={{left: hobby.left, top: hobby.top}}
                 drag
                 dragConstraints={constraintRef}
