@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const EducationSection = () => {
     return (
-        <div id="home" className="container relative max-w-2xl mx-auto">
+        <div className="container relative max-w-2xl mx-auto">
             <h1 className="font-calistoga text-3xl md:text-4xl">Education</h1>
             <Link href={"https://uci.edu/"} className="flex items-start justify-between py-5 group relative">
                 <div className="flex items-start gap-6">
