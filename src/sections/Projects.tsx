@@ -66,7 +66,7 @@ const portfolioProjects = [
     year: "2024",
     title: "Codebook",
     results: [
-      { title: "Web application to take notes and write syntax-highlighted code snippets" },
+      { title: "Web application to take notes and write code snippets" },
       { title: "Combines the functionalities of a note-taking tool and a code editor" },
       { title: "Create and organize notes for different classes" },
     ],
@@ -123,7 +123,7 @@ export const ProjectsSection = () => {
                   <a href={project.githubLink}>
                     <button
                         className="inline-flex items-center justify-center gap-2 mt-6 bg-gradient-to-r from-emerald-300 to-sky-400  text-white h-12 w-full md:w-auto px-6 md:px-20 rounded-xl font-semibold cursor-pointer">
-                      <span>Visit Repo</span>
+                      <span>Visit Git Repo</span>
                       <MoveUpRight className="size-4 transition ease-in-out hover:-translate-y-1 duration-300"/>
                     </button>
                   </a>
