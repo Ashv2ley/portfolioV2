@@ -1,6 +1,8 @@
 import listifyLandingPage from "@/assets/images/listify-landing-page.png";
 import soundcrateLandingPage from "@/assets/images/soundcrate-landing-page.png";
 import tunesLandingPage from "@/assets/images/tunes-landing-page.png";
+import sidehustleLandingPage from "@/assets/images/sidehustle.png";
+import codebookLandingPage from "@/assets/images/codebook.png";
 import Image from "next/image";
 import { CircleCheck, MoveUpRight } from "lucide-react"
 import grainImage from '@/assets/images/grain.jpg'
@@ -16,7 +18,8 @@ const portfolioProjects = [
       { title: "Boosts user productivity" },
       { title: "Track short-term/long-term goals" },
     ],
-    link: "https://glistening-macaron-80db2c.netlify.app/",
+    liveLink: "https://glistening-macaron-80db2c.netlify.app/",
+    githubLink: "https://github.com/Ashv2ley/Listify",
     image: listifyLandingPage,
   },
   {
@@ -28,7 +31,8 @@ const portfolioProjects = [
       { title: "Explore new genres" },
       { title: "Stay updated on popular music" },
     ],
-    link: "https://mellifluous-bonbon-ea93e4.netlify.app/",
+    liveLink: "https://mellifluous-bonbon-ea93e4.netlify.app/",
+    githubLink: "https://github.com/Ashv2ley/Spotify-Clone",
     image: tunesLandingPage,
   },
   {
@@ -40,8 +44,35 @@ const portfolioProjects = [
       { title: "Rate and review songs from favorite artists" },
       { title: "Follow friends and other audiophiles" },
     ],
-    link: "https://soundcrate-adi2p07bp-soundcrate.vercel.app/",
+    liveLink: "https://soundcrate-adi2p07bp-soundcrate.vercel.app/",
+    githubLink: "https://github.com/SoundCrate/soundcrate.git",
     image: soundcrateLandingPage,
+  },
+  {
+    company: "Ashley Anyanwu and Peers",
+    year: "2024",
+    title: "SideHustle",
+    results: [
+      { title: "Student marketplace web application" },
+      { title: "Purchase and sell services/products to other students" },
+      { title: "Follow friends and other students" },
+    ],
+    liveLink: "",
+    githubLink: "https://github.com/dcmbrz/ecommerce-app",
+    image: sidehustleLandingPage,
+  },
+  {
+    company: "Ashley Anyanwu",
+    year: "2024",
+    title: "Codebook",
+    results: [
+      { title: "Web application to take notes and include formatted, syntax-highlighted code snippets" },
+      { title: "Combines the functionalities of a note-taking tool and a code editor" },
+      { title: "Create and organize notes for different classes" },
+    ],
+    liveLink: "",
+    githubLink: "https://github.com/Ashv2ley/CodeBook",
+    image: codebookLandingPage,
   }
 ];
 
@@ -65,35 +96,44 @@ export const ProjectsSection = () => {
             > 
               <div className="absolute inset-0 -z-10 opacity-5" style={{backgroundImage: `url(${grainImage.src})`}}></div>
               <div className="lg:grid lg:grid-cols-2 lg:gap-10">
-                <div className="lg:pb-10"> 
-                  <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
+                <div className="lg:pb-10">
+                  <div
+                      className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
                     <span>{project.company}</span>
                     <span>•</span>
                     <span>{project.year}</span>
                   </div>
                   <h3 className="font-calistoga text-2xl mt-2 md:text-4xl md:mt-4">{project.title}</h3>
-                  <hr className="border-t-2 border-white/5 mt-3 md:mt-4"/> 
+                  <hr className="border-t-2 border-white/5 mt-3 md:mt-4"/>
                   <ul className="flef flex-col gap-3 mt-3 md:mt-4">
                     {project.results.map(result => (
-                      <li key={result.title} className="flex gap-2 text-sm md:text-base text-white/50 mt-2"> 
-                        <CircleCheck className="size-5 md:size-6"/>
-                        <span>{result.title}</span>
-                      </li>
+                        <li key={result.title} className="flex gap-2 text-sm md:text-base text-white/50 mt-2">
+                          <CircleCheck className="size-5 md:size-6"/>
+                          <span>{result.title}</span>
+                        </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
-                    <button className="inline-flex items-center justify-center gap-2 mt-6 bg-white text-gray-950 h-12 w-full md:w-auto px-6 md:px-20 rounded-xl font-semibold cursor-pointer"> {/* Reduced margin and padding */}
+                  <a href={project.liveLink}>
+                    <button
+                        className="inline-flex items-center justify-center gap-2 mt-6 bg-white text-gray-950 h-12 w-full md:w-auto px-6 md:px-20 rounded-xl font-semibold cursor-pointer"> {/* Reduced margin and padding */}
                       <span>Visit Live Site</span>
-                      <MoveUpRight className="size-4"/>
+                      <MoveUpRight className="size-4 transition ease-in-out hover:-translate-y-1 duration-300"/>
+                    </button>
+                  </a>
+                  <a href={project.githubLink}>
+                    <button
+                        className="inline-flex items-center justify-center gap-2 mt-6 bg-gradient-to-r from-emerald-300 to-sky-400  text-white h-12 w-full md:w-auto px-6 md:px-20 rounded-xl font-semibold cursor-pointer">
+                      <span>Visit Github Repo</span>
+                      <MoveUpRight className="size-4 transition ease-in-out hover:-translate-y-1 duration-300"/>
                     </button>
                   </a>
                 </div>
                 <div className="relative">
-                  <Image 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="mt-6 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
-                  /> 
+                  <Image
+                      src={project.image}
+                      alt={project.title}
+                      className="mt-6 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                  />
                 </div>
               </div>
             </div>

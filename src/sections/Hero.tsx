@@ -24,7 +24,7 @@ export const HeroSection = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
             </span>
-            <div className="text-xs md:text-sm font-medium">Open to Internships / New Grad Roles</div>
+            <div className="text-xs md:text-sm font-medium">Open to New Grad Roles</div>
           </a>
         </div>
         
