@@ -1,3 +1,3 @@
 export const Footer = () => {
-  return <div>Footer Section</div>;
+  return <div className={"text-center"}>Footer Section</div>;
 };

@@ -1,8 +1,9 @@
+import {Asterisk} from "lucide-react"
 export const SkillSection = () => {
         const skills = [
           {
             id: 1,
-            skill: "React.js",          
+            skill: "React",
           },
           {
             id: 2,
@@ -38,18 +39,40 @@ export const SkillSection = () => {
           },
           {
             id: 10,
-            skill: "React Native",
+            skill: "Typescript",
+          },
+          {
+            id: 11,
+            skill: "SQL",
+          },
+          {
+            id: 12,
+            skill: "HTML",
+          },
+          {
+            id: 13,
+            skill: "TailwindCSS",
           },
         ];
     
         return (
-            <div className="container relative max-w-2xl mx-auto">
-                <h1 className="font-calistoga text-3xl md:text-4xl">Skills</h1>
-                <div className="flex flex-wrap gap-5 mt-5">
-                {skills.map((skill) => (
-                    <div key={skill.id} className="text-sm md:text-lg text-center border bg-slate-500/10 border-white/15 p-1 px-2 md:p-1 md:px-4 rounded-lg">{skill.skill}</div>
-                ))}
+            <div className="">
+              <p className="container relative max-w-6xl justify-center flex pb-14 text-xl uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">Technical Skills</p>
+
+              <div className="bg-gradient-to-r from-emerald-300 to-sky-400 py-3 overflow-x-clip -rotate-2 -mx-1">
+                <div className="flex [mask-image:linear-gradient(to_right, transparent, black_10%,black_90%,transparent)]">
+                  <div className="flex flex-none gap-4 py-1">
+                    {skills.map((skill) => (
+                        <div className={"inline-flex gap-4 items-center"} key={skill.id}>
+                          <div className="w-fit text-black text-sm md:text-lg text-center border bg-slate-500/40 border-white/10 p-1 px-2 md:p-1 md:px-4 rounded-lg">
+                            <span className={"font-medium"}>{skill.skill}</span>
+                          </div>
+                          <Asterisk className={"animate-spin text-black"}/>
+                        </div>
+                    ))}
+                  </div>
                 </div>
-          </div>
-    );
-  };
+              </div>
+            </div>
+        );
+};

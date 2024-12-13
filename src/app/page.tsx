@@ -10,16 +10,17 @@ import { ContactSection } from "@/sections/Contact";
 
 export default function Home() {
   return (
-    <div className="mt-8">
-      <Header/>
-      <HeroSection/>
-      <EducationSection/>
-      <WorkSection/>
-      <SkillSection/>
-      <ProjectsSection/>
-      <AboutSection/>
-      <ContactSection/>
-      <Navbar />
-    </div>
+      <div className="mt-8">
+          <Header/>
+          <HeroSection/>
+          <EducationSection/>
+          <WorkSection/>
+          <SkillSection/>
+          <ProjectsSection/>
+          <AboutSection/>
+          <ContactSection/>
+          <Navbar/>
+          <p className={"ml-5"}>Created with TypeScript, Next.js, Tailwind, and CSS Animation</p>
+      </div>
   );
 }
