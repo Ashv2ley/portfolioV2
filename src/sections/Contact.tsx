@@ -17,7 +17,7 @@ export const ContactSection = () => {
                           {" "}and I&apos;ll respond as soon as possible.
                       </p>
                   </div>
-                  <Link href={"https://www.linkedin.com/in/ashley-anyanwu/"} className={"bg-black duration-500 transition-[max-width] w-[100%] max-w-[18%] hover:max-w-[20%] flex items-center justify-between p-3 px-5 rounded-lg my-5 gap-3 text-white"}>Contact Me<MoveUpRight size={14}/></Link>
+                  <Link href={"https://www.linkedin.com/in/ashley-anyanwu/"} className={"bg-black duration-500 transition-[max-width] w-[100%] max-w-[70%] md:max-w-[18%] hover:max-w-[100%] md:hover:max-w-[25%] flex items-center justify-between p-3 px-5 rounded-lg my-5 gap-3 text-white"}>Contact Me<MoveUpRight size={14}/></Link>
               </div>
           </div>
       </div>
