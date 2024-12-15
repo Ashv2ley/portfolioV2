@@ -147,35 +147,35 @@ export const AboutSection = () => {
                 ))}
               </div>
             </Card>
-            <Card className={"h-[320px] p-0"}>
-              <CardHeader title="My Toolbox"
-                          description="Exmplore the technologies and tools I use to build exceptional applications"
-                          className="px-6 pt-6"/>
-              <div className="flex flex-none mt-6 gap-4 animate-move-left [animation-duration:20s]">
-                {[...new Array(2)].fill(0).map((_, index) => (
-                    <Fragment key={index}>
-                      {skills.map((skill) => (
-                          <div key={skill.skill}
-                               className="inline-flex items-center gap-4 py-2 px-3 border-2 border-white/15 rounded-lg bg-white/5">
-                            <span className={"font-medium text-lg"}>{skill.skill}</span>
-                          </div>
-                      ))}
-                    </Fragment>
-                ))}
-              </div>
-              <div className="flex flex-none mt-6 gap-4 animate-move-right [animation-duration:20s]">
-                {[...new Array(2)].fill(0).map((_, index) => (
-                    <Fragment key={index}>
-                      {skills2.map((skill) => (
-                          <div key={skill.id}
-                               className="inline-flex items-center gap-4 py-2 px-3 border-2 border-white/15 rounded-lg bg-white/5">
-                            <span className={"font-medium text-lg"}>{skill.skill}</span>
-                          </div>
-                      ))}
-                    </Fragment>
-                ))}
-              </div>
-            </Card>
+              <Card className={"h-[320px] p-0"}>
+                <CardHeader title="My Toolbox"
+                            description="Exmplore the technologies and tools I use to build exceptional applications"
+                            className="px-6 pt-6"/>
+                <div className="flex flex-none mt-6 gap-4 whitespace-nowrap animate-move-left [animation-duration:10s]">
+                  {[...new Array(2)].map((skill, index) => (
+                      <Fragment key={index}>
+                        {skills.map((skill, index) => (
+                            <div key={skill.id}
+                                 className="inline-flex items-center gap-4 py-2 px-3 border-2 border-white/15 rounded-lg bg-white/5">
+                              <span className="font-medium text-lg">{skill.skill}</span>
+                            </div>
+                        ))}
+                      </Fragment>
+                  ))}
+                </div>
+                <div className="flex flex-none mt-6 gap-4 whitespace-nowrap animate-move-right [animation-duration:5s]">
+                  {[...new Array(2)].map((skill, index) => (
+                      <Fragment key={index}>
+                        {skills2.map((skill, index) => (
+                            <div key={skill.id}
+                                 className="inline-flex items-center gap-4 py-2 px-3 border-2 border-white/15 rounded-lg bg-white/5">
+                              <span className="font-medium text-lg">{skill.skill}</span>
+                            </div>
+                        ))}
+                      </Fragment>
+                  ))}
+                </div>
+              </Card>
             </div>
 
           </div>

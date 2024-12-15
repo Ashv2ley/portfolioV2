@@ -76,3 +76,12 @@
     @apply lg:max-w-5xl;
   }
 }
+.overflow-hidden {
+  overflow: hidden;
+}
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+.flex {
+  display: flex;
+}
